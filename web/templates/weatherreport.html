@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Welcome to mywebsite</title>
+</head>
+<body>
+<h1>MySiteLogo</h1>
+
+<hr>
+
+<nav>
+    <a href="/">Home</a> |
+    <a href="/about">About</a> |
+    <a href="/report">Log Report</a> |
+    <a href="/weather">Weather Report</a> |
+
+</nav>
+
+<hr>
+
+<h1>Weather Report</h1>
+
+<table border="1" bgcolor="green">
+    {% for k,v in my_data.items() : %}
+    <tr>
+        <td>{{k}}</td>
+        <td>{{v}}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+</body>
+</html>
